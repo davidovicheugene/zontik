@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const linksClasses = 'header-li-item link-gray'
 
 const profileIcon = require('../static/images/profile_pic.png')
 const notificationsIcon = require('../static/images/icons/notification-icon.png')
 const settingsIcon = require('../static/images/icons/settings-icon.png')
+
+
 
 const Header = () => {
     return (
@@ -14,10 +16,10 @@ const Header = () => {
                     <Link to="/" id='header-logo'>ZONTIK</Link>
                 </div>
                 <div className='header-mid-block'>
-                    <Link to="/finances" className={linksClasses}>Финансы</Link>
-                    <Link to="/organizer" className={linksClasses}>Органайзер</Link>
-                    <Link to="/tools" className={linksClasses}>Инструменты</Link>
-                    <Link to="/analytics" className={linksClasses}>Аналитика</Link>
+                    <NavLink to="/finances" className={linksClasses}>Финансы</NavLink>
+                    <NavLink to="/organizer" className={linksClasses}>Органайзер</NavLink>
+                    <NavLink to="/tools" className={linksClasses}>Инструменты</NavLink>
+                    <NavLink to="/analytics" className={linksClasses}>Аналитика</NavLink>
                 </div>
                 <div className='header-right-block'>
                     <div className='header-sett-item' id='balance'>

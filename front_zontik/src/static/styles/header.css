@@ -34,6 +34,21 @@ header {
     width: fit-content;
 }
 
+.header-li-item:hover {
+    color: #ababab;
+}
+
+.active {
+    border-top:#3A35FB 4px solid;
+    box-sizing: border-box;
+    padding-bottom: 4px;
+    
+}
+
+a.active {
+    color: #DEDEDE;
+}
+
 .header-li-item:not(:last-child) {
     margin-right: 25px;
 }
