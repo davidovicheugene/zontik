@@ -1,9 +1,6 @@
 env
 .idea
-
-front_zontik/node_modules
 front_zontik/src/notes.txt
-
 back_zontik/db.sqlite3
 back_zontik/.idea
 back_zontik/back_zontik/__pycache__

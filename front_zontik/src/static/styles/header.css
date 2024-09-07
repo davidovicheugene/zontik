@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+header {
+    height: 64px;
+    width: 98%;
+    padding: 0 24px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-left-block {
+    display: flex;
+    margin-right: 65px;
+}
+
+#header-logo {
+    color: #FFFFFF;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.header-mid-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-li-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.header-li-item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.link-gray {
+    color: #787E87;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-right-block {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: auto;
+    height: 64px;
+    align-items: center;
+}
+
+.header-sett-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    margin-left: 8px;
+}
+
+.header-sett-item:not(:first-child) {
+    margin-left: 8px;
+    width: 38px;
+    background-color: #1C1D26;
+}
+
+#balance {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    background-color: #1C1D26;
+    padding-left: 7px;
+}
+
+#balance_currency {
+    color: #737981;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#balance_value {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 6px;
+    min-width: 70px;
+}
+
+#add_balance {
+    background-color: #3A35FB;
+    color: #FFFFFF;
+    width: 34px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+#profile-pic {
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+}
