@@ -1,0 +1,7 @@
+.content-container-main {
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 16px;
+    flex-direction: row;
+}

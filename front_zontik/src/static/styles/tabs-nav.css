@@ -1,0 +1,28 @@
+.left-side-nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 16px;
+}
+
+.left-side-nav-tab {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 8px;
+    color: #787E87;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.tab-icon {
+    margin-right: 8px;
+    width: 14px;
+}
+
+.left-side-nav .active {
+    background-color: #16161D;
+}

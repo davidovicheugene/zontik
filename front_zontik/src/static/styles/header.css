@@ -38,7 +38,7 @@ header {
     color: #ababab;
 }
 
-.active {
+header .active {
     border-top:#3A35FB 4px solid;
     box-sizing: border-box;
     padding-bottom: 4px;
