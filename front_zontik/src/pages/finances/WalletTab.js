@@ -36,7 +36,7 @@ const WalletTab = () => {
                 <div className='wallet_trans_history'>
                     <input placeholder='Поиск по истории'/>
                     <div className='search_filters'>
-                        <a href="#"className='search_filter_btn active'>...</a>
+                        <a href="#"className='search_filter_btn active'>. . .</a>
                         <a href="#"className='search_filter_btn'>Пополнения</a>
                         <a href="#"className='search_filter_btn'>Списания</a>
                         <a href="#"className='search_filter_btn'>Сервисные</a>
