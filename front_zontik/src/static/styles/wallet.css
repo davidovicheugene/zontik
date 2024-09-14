@@ -1,0 +1,186 @@
+.wallet_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.total_wallet_block {
+    display: flex;
+    flex-direction: column;
+    width: 602px;
+    margin: 38px 0 0 58px;
+}
+
+.total_balance_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.total_balance_block div {
+    display: flex;
+    flex-direction: row;
+}
+
+.balance_main_sum, .balance_main_currency {
+    font-weight: 900;
+    font-size: 48px;
+    color: #FFF;
+}
+
+.balance_main_currency {
+    color: #787E87;
+    margin-left: 8px;
+}
+
+#balance_exists {
+    font-size: 16px;
+    font-weight: 600;
+    color: #787E87;
+    margin-bottom: 12px;
+}
+
+.change_wallet_btns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 22px;
+}
+
+.trans_btn_block {
+    margin-right: 46px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trans_btn {
+    width: 56px;
+    height: 56px;
+    background-color: #3A35FB;
+    color: #FFF;
+    margin-bottom: 12px;
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trans_btn_alt {
+    font-size: 16px;
+    color: #DEDEDE;
+    font-weight: 400;
+}
+
+.wallet_trans_history {
+    margin-top: 32px;
+    width: 600px
+}
+
+.wallet_trans_history input {
+    width: 564px;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1C1D26;
+    outline: none;
+    color: #DEDEDE;
+    font-size: 16px;
+    padding: 0 18px;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.search_filters {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.search_filter_btn {
+    display: flex;
+    background-color: rgb(58,53,251,0.3);
+    border-radius: 5px;
+    height: 32px;
+    padding:0 12px;
+    align-items: center;
+    justify-content: center;
+    color: #787E87;
+    font-size: 14px;
+    margin-right: 14px;
+}
+
+.search_filters>.active{
+    background-color: #3A35FB;
+    color:#FFF;
+}
+
+.bank_accounts_block {
+    height:80vh;
+    margin-top: 16px;
+}
+
+/* Bank Account Widget */
+.bank_account_widget {
+    background-color: #16161D;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 18px;
+}
+.bank_account_name {
+    color: #787E87;
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 16px;
+}
+
+.bank_account_balance {
+    margin-top: 22px;
+    color: #DEDEDE;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.bank_account_holder {
+    margin-top: 26px;
+    color: #DEDEDE;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bank_account_details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 23px;
+}
+.bank_account_details>p:not(:last-child)    {
+    color: #787E87;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bank_account_num {
+    margin-right: 12px;
+}
+
+.bank_account_expires {
+    margin-right: 110px;
+}
+
+.bank_account_currency {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.widget_polygon {
+    position: absolute;
+    right: 0;
+    top: 36px;
+}
+
+
+/* Bank Account Widget */
