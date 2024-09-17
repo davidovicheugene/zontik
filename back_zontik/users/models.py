@@ -18,3 +18,5 @@ class User(AbstractUser):
     balance_currency = models.CharField(max_length=3, choices=BALANCE_CURRENCY_CHOICES, default="RUB", verbose_name="Валюта баланса")
     profile_image = models.ImageField(upload_to=user_directory_path, null=True, width_field=200, height_field=200, verbose_name="Фото профиля")
 
+
+

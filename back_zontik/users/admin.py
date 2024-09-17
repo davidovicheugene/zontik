@@ -3,7 +3,8 @@ from .models import User
 
 
 class UserAdmin(admin.ModelAdmin):
-    fields = ('last_name',
+    fields = ('username',
+              'last_name',
               'first_name',
               'middle_name',
               'email',
