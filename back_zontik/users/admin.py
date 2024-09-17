@@ -11,7 +11,6 @@ class UserAdmin(admin.ModelAdmin):
               'balance_currency',
               'is_active',
               'is_staff')
-
     list_display = ('username', 'last_name', 'first_name', 'middle_name', 'email', 'balance')
 
 

@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'backend_api',
     'users',
-    'wallets'
+    'fin_accounts'
 ]
 
 MIDDLEWARE = [

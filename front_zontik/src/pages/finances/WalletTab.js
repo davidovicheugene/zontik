@@ -20,11 +20,11 @@ const WalletTab = () => {
                 <div className='change_wallet_btns'>
                     <a href='#' className='trans_btn_block'>
                         <div className='trans_btn'>+</div>
-                        <span className='trans_btn_alt'>Доход</span>
+                        <span className='trans_btn_alt'>Зачислить</span>
                     </a>
                     <a href='#' className='trans_btn_block'>
                         <div className='trans_btn'>-</div>
-                        <span className='trans_btn_alt'>Расход</span>
+                        <span className='trans_btn_alt'>Списать</span>
                     </a>
                     <a href='#' className='trans_btn_block'>
                         <div className='trans_btn'>
@@ -82,7 +82,7 @@ const WalletTab = () => {
                 </div>
                 <div className='bank_account_widget'>
                     <img className='widget_polygon' src={WidgetPolygonBlueIcon}/>
-                    <p className='bank_account_name'>SYSTEM BALANCE</p>
+                    <p className='bank_account_name'>ВНУТРЕННИЙ БАЛАНС</p>
                     <p className='bank_account_balance'>20034.01</p>
                     <p className='bank_account_holder'>YAUHENI DAVIDOVICH</p>
                     <div className='bank_account_details'>

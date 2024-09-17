@@ -9,8 +9,8 @@ back_zontik/backend_api/migrations/
 back_zontik/users/__pycache__
 back_zontik/users/__pycache__
 back_zontik/users/migrations/
-back_zontik/wallets/__pycache__
-back_zontik/wallets/__pycache__
-back_zontik/wallets/migrations/
+back_zontik/fin_accounts/__pycache__
+back_zontik/fin_accounts/__pycache__
+back_zontik/fin_accounts/migrations/
 back_zontik/static/
 back_zontik/media/
