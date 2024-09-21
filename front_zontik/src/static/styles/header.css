@@ -100,8 +100,9 @@ a.active {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 700;
-    margin: 0 6px;
-    min-width: 70px;
+    margin: 0 10px;
+    min-width: 30px;
+    text-align: end;
 }
 
 #add_balance {

@@ -14,19 +14,14 @@ function put_account_color(color) {
     switch (color) {
         case "PRP":
             return([{color: '#3A35FB'}, WidgetPolygonPurpleIcon])
-            break;
         case "RED":
             return([{color: '#EF3054'}, WidgetPolygonRedIcon])
-            break;
         case "GRN":
             return([{color: '#61A940'}, WidgetPolygonGreenIcon])
-            break;
         case "ORN":
             return([{color: '#FF9800'}, WidgetPolygonOrangeIcon])
-            break;
         default:
             return([{color: '#3A35FB'}, WidgetPolygonPurpleIcon])
-            break;
     }
 }
 function get_total_balance(accounts) {
@@ -116,6 +111,7 @@ class WalletTab extends React.Component {
                     </div>
                         </a>
                     ))}
+                    <a href="#" className='bank_account_widget' id='add_bank_account'>Добавить счёт</a>
                 </div>
             </div>
         )

@@ -182,5 +182,14 @@
     top: 36px;
 }
 
+#add_bank_account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    color:#787E87;
+    font-size: 16px;
+}
 
 /* Bank Account Widget */

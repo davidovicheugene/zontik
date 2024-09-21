@@ -1,4 +1,4 @@
-from django.shortcuts import render
+import decimal
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import FinAccount
@@ -47,6 +47,27 @@ class GetBaseAccsData(APIView):
                 "card_number": prepare_card_number(output.card_number),
                 "date_expires": prepare_date(output.date_expires),
                 "currency": output.currency,
+                "id": output.pk,
             } for output in accounts
         ]
         return Response(output)
+
+
+class ChangeAccBalance(APIView):
+    def post(self, request, **kwargs):
+        acc = FinAccount.objects.get(pk=kwargs['pk'])
+        change = request.data[0]["balance"]
+        sign = request.data[0]["sign"]
+        if sign == "+":
+            acc.balance = acc.balance + decimal.Decimal(change)
+        elif sign == "-":
+            if acc.balance >= decimal.Decimal(change):
+                acc.balance = acc.balance - decimal.Decimal(change)
+            else:
+                pass
+        else:
+            pass
+
+        acc.save()
+        return Response(request.data)
+
