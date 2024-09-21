@@ -1,7 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
-import React, { Component} from 'react';
+import React from 'react';
 import axios from 'axios'; 
-import { useEffect, state } from "react";
 
 const linksClasses = 'header-li-item link-gray'
 
