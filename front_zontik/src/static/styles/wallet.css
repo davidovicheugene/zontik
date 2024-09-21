@@ -193,3 +193,52 @@
 }
 
 /* Bank Account Widget */
+
+
+.change_bal_cont {
+    margin-top: 16px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#16161D;
+    height: 300px;
+}
+
+.select_acc_horizontal {
+    padding: 0 16px;
+    margin-top: 12px;
+    width: 260px;
+    height: 40px;
+    font-family: "Sofia Sans", sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #1C1D26;
+    color:#DEDEDE;
+    font-size: 16px;
+}
+
+#summ_to_change {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:#DEDEDE;
+    width: 260px;
+}
+
+.amount_input {
+    width: 180px;
+    height: 40px;
+    font-family: "Sofia Sans", sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #1C1D26;
+    color:#DEDEDE;
+    font-size: 16px;
+    padding: 0 16px;
+    margin-right: 12px;
+}
+

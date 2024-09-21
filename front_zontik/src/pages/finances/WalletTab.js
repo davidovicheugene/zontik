@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios'; 
+import { Link, Routes, Route } from 'react-router-dom'
 
 import '../../static/styles/wallet.css'
 import TransSendIcon from '../../static/images/icons/send_money_icon.png'
@@ -9,6 +10,7 @@ import WidgetPolygonRedIcon from '../../static/images/icons/account_widget_red.p
 import WidgetPolygonGreenIcon from '../../static/images/icons/account_widget_green.png'
 import WidgetPolygonPurpleIcon from '../../static/images/icons/account_widget_blue.png'
 
+import { ChangeAccBalance } from '../../components/ChangeAccBalance'
 
 function put_account_color(color) {
     switch (color) {
@@ -41,18 +43,14 @@ class WalletTab extends React.Component {
         axios.get('http://127.0.0.1:8000/finances/accs_base_data/1') 
         .then(res => { 
             data = res.data; 
-            this.setState({ 
-                accounts : data     
-            }); 
-        })
+            this.setState({ accounts : data }); 
+        }).catch(err => {}) 
+
         axios.get('http://127.0.0.1:8000/finances/sys_balance/1') 
         .then(res => { 
             data = res.data; 
-            this.setState({ 
-                currency : data[0]
-            }); 
-        })  
-        .catch(err => {}) 
+            this.setState({ currency : data[0] }); 
+        }).catch(err => {}) 
     }
 
     render() {
@@ -67,21 +65,24 @@ class WalletTab extends React.Component {
                         </div>
                     </div>
                     <div className='change_wallet_btns'>
-                        <a href='#' className='trans_btn_block'>
+                        <Link to='change_bal' className='trans_btn_block'>
                             <div className='trans_btn'>+</div>
                             <span className='trans_btn_alt'>Зачислить</span>
-                        </a>
-                        <a href='#' className='trans_btn_block'>
+                        </Link>
+                        <Link to='change_bal' className='trans_btn_block'>
                             <div className='trans_btn'>-</div>
                             <span className='trans_btn_alt'>Списать</span>
-                        </a>
-                        <a href='#' className='trans_btn_block'>
+                        </Link>
+                        <Link to='change_bal' className='trans_btn_block'>
                             <div className='trans_btn'>
                                 <img src={TransSendIcon} id='send_trans_icon'/>
                             </div>
                             <span className='trans_btn_alt'>Перевести</span>
-                        </a>
-                    </div> 
+                        </Link>
+                    </div>
+                    <Routes>
+                        <Route path='change_bal' element={ <ChangeAccBalance/> }/>
+                    </Routes>
                     <div className='wallet_trans_history'>
                         <input placeholder='Поиск по истории'/>
                         <div className='search_filters'>

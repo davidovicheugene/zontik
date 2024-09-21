@@ -12,7 +12,7 @@ const FinancesPage = () => {
                 <FinancesTabsNav />
                 <Routes>
                     <Route path='/' element={ <OverallTab/> }/>
-                    <Route path='wallet' element={ <WalletTab/> }/>
+                    <Route path='wallet/*' element={ <WalletTab/> }/>
                     <Route path='assets' element={ <AssetsTab/> }/>
                     <Route path='liabilities' element={ <LiabilitiesTab/> }/>
                 </Routes>

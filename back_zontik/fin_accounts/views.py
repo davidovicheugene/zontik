@@ -56,8 +56,8 @@ class GetBaseAccsData(APIView):
 class ChangeAccBalance(APIView):
     def post(self, request, **kwargs):
         acc = FinAccount.objects.get(pk=kwargs['pk'])
-        change = request.data[0]["balance"]
-        sign = request.data[0]["sign"]
+        change = request.data["balance"]
+        sign = request.data["sign"]
         if sign == "+":
             acc.balance = acc.balance + decimal.Decimal(change)
         elif sign == "-":
