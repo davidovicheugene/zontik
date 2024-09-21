@@ -27,6 +27,7 @@ class FinAccount(models.Model):
     currency = models.CharField(max_length=3, choices=CURRENCY_CHOICES, default="RUB", verbose_name="Валюта счёта")
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="Дата добавления")
     date_signed = models.DateField(null=True, verbose_name="Дата открытия")
+    is_active = models.BooleanField(default=True, verbose_name="Активность")
     user = models.ForeignKey(to='users.User', on_delete=models.CASCADE, verbose_name="Владелец")
 
 
