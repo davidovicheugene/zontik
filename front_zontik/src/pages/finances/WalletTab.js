@@ -99,17 +99,17 @@ class WalletTab extends React.Component {
                 <div className='bank_accounts_block'>
                     {this.state.accounts.map((output, id) => (
                         <a href='#' key={id}>
-                            <div className='bank_account_widget'>
-                            <img className='widget_polygon' src={put_account_color(output.color)[1]}/>
-                            <p className='bank_account_name'>{output.name}</p>
-                            <p className='bank_account_balance'>{output.balance}</p>
-                            <p className='bank_account_holder'>{output.holder}</p>
-                            <div className='bank_account_details'>
-                            <p className='bank_account_num'>{output.card_number}</p>
-                            <p className='bank_account_expires'>{output.date_expires}</p>
-                            <p className='bank_account_currency' style={put_account_color(output.color)[0]}>{output.currency}</p>
-                        </div>   
-                    </div>
+                            <div className='bank_account_widget' id={"acc_widget_"+output.id}  >
+                                <img className='widget_polygon' src={put_account_color(output.color)[1]}/>
+                                <p className='bank_account_name'>{output.name}</p>
+                                <p className='bank_account_balance'>{output.balance}</p>
+                                <p className='bank_account_holder'>{output.holder}</p>
+                                <div className='bank_account_details'>
+                                    <p className='bank_account_num'>{output.card_number}</p>
+                                    <p className='bank_account_expires'>{output.date_expires}</p>
+                                    <p className='bank_account_currency' style={put_account_color(output.color)[0]}>{output.currency}</p>
+                                </div>   
+                            </div>
                         </a>
                     ))}
                     <a href="#" className='bank_account_widget' id='add_bank_account'>Добавить счёт</a>
