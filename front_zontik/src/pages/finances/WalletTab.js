@@ -10,7 +10,8 @@ import WidgetPolygonRedIcon from '../../static/images/icons/account_widget_red.p
 import WidgetPolygonGreenIcon from '../../static/images/icons/account_widget_green.png'
 import WidgetPolygonPurpleIcon from '../../static/images/icons/account_widget_blue.png'
 
-import { ChangeAccBalance } from '../../components/ChangeAccBalance'
+import { ChangeAccBalance } from '../../components/finances/ChangeAccBalance'
+import { TransferAccBalance } from '../../components/finances/TransferAccBalance'
 
 function put_account_color(color) {
     switch (color) {
@@ -73,7 +74,7 @@ class WalletTab extends React.Component {
                             <div className='trans_btn'>-</div>
                             <span className='trans_btn_alt'>Списать</span>
                         </Link>
-                        <Link to='change_bal' className='trans_btn_block'>
+                        <Link to='transfer_bal' className='trans_btn_block'>
                             <div className='trans_btn'>
                                 <img src={TransSendIcon} id='send_trans_icon'/>
                             </div>
@@ -82,6 +83,7 @@ class WalletTab extends React.Component {
                     </div>
                     <Routes>
                         <Route path='change_bal' element={ <ChangeAccBalance/> }/>
+                        <Route path='transfer_bal' element={ <TransferAccBalance/> }/>
                     </Routes>
                     <div className='wallet_trans_history'>
                         <input placeholder='Поиск по истории'/>

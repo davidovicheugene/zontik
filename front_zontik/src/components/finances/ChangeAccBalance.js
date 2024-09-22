@@ -49,20 +49,23 @@ class ChangeAccBalance extends React.Component {
     render () {
         return (
             <div className="change_bal_cont">
+                <span className='transfer_acc_span'>Счёт</span>
                 <select className="select_acc_horizontal" id='acc_ch_select'>
                     {this.state.accounts.map((output, id) => (
                          <option key={id} value={output.id}>{output.name}</option>
                     ))}
                 </select>
+                <span className='transfer_acc_span'>Тип операции</span>
                 <select className="select_acc_horizontal" id='sign_ch_select'>
                          <option value="+">Зачислить</option>
                          <option value="-">Списать</option>
                 </select>
-                <div id='summ_to_change'>
+                <span className='transfer_acc_span'>Сумма в BYN</span>
+                <div className="value_to_change" id='summ_to_change'>
                     <input className='amount_input' id='value_ch_input'></input>
                     <span>BYN</span>
                 </div>
-                <Link to={'finances/wallet'}><button onClick={send_change_bal}>Совершить операцию</button></Link>
+                <Link to={'finances/wallet'}><button className='complete_op_bal' onClick={send_change_bal}>Совершить операцию</button></Link>
             </div> 
         )
     }

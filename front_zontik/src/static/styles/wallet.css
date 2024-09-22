@@ -207,7 +207,7 @@
 
 .select_acc_horizontal {
     padding: 0 16px;
-    margin-top: 12px;
+    margin-top: 6px;
     width: 260px;
     height: 40px;
     font-family: "Sofia Sans", sans-serif;
@@ -217,10 +217,12 @@
     background-color: #1C1D26;
     color:#DEDEDE;
     font-size: 16px;
+    appearance: none;
+    text-align: center;
 }
 
 #summ_to_change {
-    margin-top: 12px;
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -242,3 +244,21 @@
     margin-right: 12px;
 }
 
+.transfer_acc_span {
+    margin-top: 8px;
+    color:#787E87;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.complete_op_bal {
+    margin-top: 20px;
+    width: 260px;
+    height: 40px;
+    background-color: #3A35FB;
+    color: #DEDEDE;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
